@@ -1,0 +1,41 @@
+.footer {
+
+    &__inner {
+        padding: 72px 39px;
+        background-color: $footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__links {
+        margin-top: 40px;
+        display: flex;
+        gap: 57px;
+    }
+
+    &__social {
+        margin-top: 88px;
+        display: flex;
+        gap: 28px;
+    }
+
+    &__link {
+        color: #458D7E;
+        text-decoration: none;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .footer {
+        &__inner {
+            padding-top: 64px;
+            padding-bottom: 80px;
+        }
+    }
+}

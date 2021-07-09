@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+$font-title: 'Fraunces', serif;
+$font-text: 'Barlow', sans-serif;
+
+$intro-bg: #39B5E4;
+
+$white: #fff;
+$black: #24303E;
+$gray-section: #808397;
+$yellow: #FAD400;
+$red: #FE7766;
+$footer: #90D4C6;
+
+@mixin title {
+    font-family: $font-title;
+    color: $black; 
+    font-weight: 900;
+}
+
+@mixin section-text {
+    color: $gray-section;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $font-text;
+    font-weight: 600;
+}
+
+@mixin bg-center {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

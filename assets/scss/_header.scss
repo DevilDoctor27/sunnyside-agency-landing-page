@@ -1,0 +1,27 @@
+.header {
+    position: absolute;
+    top: 34px;
+    width: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        max-width: 170px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        &__logo {
+            max-width: 124px;
+        }
+    }
+}
